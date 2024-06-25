@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" media="all" href="../static/css/mycss.css" th:href="@{/css/mycss.css}" />
+	<script src="../static/js/script.js" th:src="@{/js/script.js}"></script>
+
+</head>
+
+<body>
+	<h1>Family Schedule</h1>
+	<ul id="scheduleList"></ul>
+	<br>
+	<hr>
+	<form id="scheduleForm">
+		Title:
+		<input type="text" id="title" required><br>
+		Date:
+		<input type="date" id="date" required><br>
+		Time:
+		<input type="time" id="time" required><br>
+		Brief Message:
+		<textarea id="briefMessage" required></textarea><br>
+		Event Type:
+		<input type="text" id="eventType"><br>
+
+		<button type="button" onclick="addScheduleItem()">Add Item</button>
+	</form>
+</body>
+
+</html>
